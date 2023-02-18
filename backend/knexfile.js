@@ -2,6 +2,7 @@
 
 /**
  * @type { Object.<string, import("knex").Knex.Config> }
+ * ./src/database/db.sqlite2
  */
 module.exports = {
 
@@ -9,12 +10,13 @@ module.exports = {
     client: 'sqlite3',
     connection: {
       filename: './src/database/db.sqlite'
-    },
+    },    
     migrations:{
       directory: './src/database/migrations'
     },
     useNullAsDefault: true
   },
+
 
   staging: {
     client: 'postgresql',

@@ -4,7 +4,9 @@ const routes = require('./routes');
 
 const app = express(); //Cachoro cachorro = new Cachorro();
 
-app.use(cors());
+app.use(cors({
+    origin: "http://loc"
+}));
 app.use(express.json());
 app.use(routes);
 
